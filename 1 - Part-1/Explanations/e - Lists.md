@@ -1,6 +1,35 @@
 # Listas
 
-Em python, temos os seguintes tipos de listas:
+Temos 4 maneiras de interpretar listas:  
+- Sequencial *vs* encadeada
+- Estática *vs* dinâmica
+
+#### Sequencial
+Os elementos são inseridos na sequência, permitindo o acesso por índice
+
+#### Encadeada
+Não necessariamente os elementos estão em posições adjacentes, há um ponteiro pro primeiro elemento, que há um ponteiro para o próximo.  
+
+Quando usar qual?  
+A sequencial possui a vantagem de poder acessar os elementos por índices, mas a memória pode ser mal utilizada.  
+Na encadeada, há otimização de memória, mas perde o acesso direto ao elemento do meio da lista.
+
+--- 
+
+Sobre a alocação de memória...  
+#### Estática
+A memória é alocada mesmo sem ser utilizada  
+
+#### Dinâmica
+Alocada sob demanda, a medida que a lista cresce
+
+Quando usar qual?
+A dinâmica é útil quando não sabemos previamente a quantidade de memória que precisaremos usar.  
+A estática é mais simples, já que a alocação só ocorreu uma vez, mas pode ser que a memória seja alocada mesmo sem uso.
+
+---
+
+Em python, as listas são sequenciais e dinâmicas.
 
 ## Tipo array
 Para declarar uma lista tipo array, basta inserir colchetes ([]).  
