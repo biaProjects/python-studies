@@ -248,3 +248,62 @@ Esse comando vai além de "transformar algo em tabela".
   Se faltar chave em alguma linha vira NaN
 
 
+## **DataFrame vazio**
+```python
+df = pd.DataFrame(columns=["nome", "idade"])
+```
+
+Isso cria uma estrutura pronta para receber dados depois.
+
+  
+## Vale esclarecer
+
+> DataFrame é coluna-orientado.  
+
+Internamente, o Pandas trabalha por coluna, não por linha.
+  
+Isso significa que...  
+- Operações em coluna são rápidas
+- Loops linha a linha são lentos
+
+Exemplo ruim:
+```python
+for index, row in df.iterrows():
+    print(row["idade"])
+```
+
+Exemplo bom:
+```python
+df["idade"] > 25
+```
+  
+## Agora vamos para to_excel()
+Depois de manipular tudo no Pandas, você pode exportar.
+
+Forma básica:
+```python
+df.to_excel("arquivo.xlsx")
+```
+
+Isso cria um arquivo Excel.
+
+Por padrão, ele salva o índice.  
+Ou seja, seu Excel vai ficar assim:
+
+```
+   | nome   | idade
+0  | Ana    | 25
+1  | Bruno  | 30
+2  | Carla  | 28
+```
+  
+Se você não quiser isso:
+```python
+df.to_excel("arquivo.xlsx", index=False)
+```
+
+## Múltiplas abas (overview rápido)
+```python
+with pd.ExcelWriter("arquivo.xlsx") as writer:
+    df.to_excel(writer, sheet_name="Planilha1", index=False)
+```
