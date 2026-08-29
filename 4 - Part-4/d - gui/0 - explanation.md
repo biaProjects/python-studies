@@ -7,7 +7,7 @@ Uma das interfaces disponíveis para isso em Pyhton é `Tkinter`.
 Vamos colocar a mão na massa e entender na prática!  
 Podemos criar nosso [primeiro código](https://github.com/biaprojects/python-studies/blob/main/4%20-%20Part-4/d%20-%20gui/1%20-%20code.py), abrindo uma janela vazia, ainda sem nenhuma funcionalidade.
 
-Depois, vamos criar o [segundo código](), uma janela com um texto.  
+Depois, vamos criar o [segundo código](https://github.com/biaprojects/python-studies/blob/main/4%20-%20Part-4/d%20-%20gui/2%20-%20code.py), uma janela com um texto.  
 
 Agora, em nosso [terceiro exemplo](), teremos uma janela que possui uma imagem.  
 
