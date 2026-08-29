@@ -2,12 +2,10 @@
 
 # GUI
 Graphical User Interface (GUI) proporcionam elementos visuais como ícones, janelas, menus e ponteiros.  
-
 Uma das interfaces disponíveis para isso em Pyhton é `Tkinter`.  
 
-Vamos colocar a mão na massa e entender na prática!
-
-Podemos criar nosso [primeiro código](https://github.com/biaprojects/python-studies/blob/main/4%20-%20Part-4/d%20-%20gui/1%20-%20code.py), abrindo uma janela vazia, ainda sem nenhumma funcionalidade.
+Vamos colocar a mão na massa e entender na prática!  
+Podemos criar nosso [primeiro código](https://github.com/biaprojects/python-studies/blob/main/4%20-%20Part-4/d%20-%20gui/1%20-%20code.py), abrindo uma janela vazia, ainda sem nenhuma funcionalidade.
 
 Depois, vamos criar o [segundo código](), uma janela com um texto.  
 
@@ -42,5 +40,3 @@ para isso, vamos usar o componente widget Text, que funciona como um editor de t
 vamos usar também o método bind() para assoociar diferentes eventos as respectivas funções de tratamento
 s padrões de evento tem o formato:
 <modificador-modificador-tipo-detalhe>
-
-anotar minuto 20 exemplos de eventos
